@@ -6,6 +6,8 @@ clone this repo
 
 ```$python smarthome.py```
 
+![](/run_terminal_demo.png)
+
 open postman or smiliar app
 
 ## Example
