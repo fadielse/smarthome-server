@@ -16,7 +16,5 @@ Note: change ip based on the ip obtained on your raspberry device
 
 ```$hostname -I```
 
-## Example
-
 ![](/channel_action_demo.png)
 ![](/channel_status_demo.png)
