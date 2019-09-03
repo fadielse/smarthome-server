@@ -3,7 +3,7 @@ smarthome server to control the lights with python Flask running on Raspberry Pi
 
 ![](/Raspberrypi3.png)
 
-# Running
+## Running
 clone this repo
 
 ```$python smarthome.py```
@@ -11,6 +11,10 @@ clone this repo
 ![](/run_terminal_demo.png)
 
 open postman or smiliar app
+
+Note: change ip based on the ip obtained on your raspberry device
+
+```$hostname -I```
 
 ## Example
 
