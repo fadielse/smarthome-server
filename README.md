@@ -4,9 +4,9 @@ smarthome server with python Flask running on Raspberry Pi 3
 # Running
 clone this repo
 
-$python smarthome.py
+```$python smarthome.py```
 
-open postman or the like
+open postman or smiliar app
 
 ## Example
 
