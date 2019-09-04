@@ -1,6 +1,8 @@
 # smarthome-server
 smarthome server to control the lights with python Flask running on Raspberry Pi 3
 
+[Demo Video](https://www.youtube.com/watch?v=_pck8VE_qvQ).
+
 ![](/Raspberrypi3.png)
 
 ## Running
