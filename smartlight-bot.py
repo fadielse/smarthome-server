@@ -84,7 +84,7 @@ def handle(msg):
     #elif command =='/help':
     #  bot.sendMessage(chat_id, '*Selamat datang di Smarthome Telegram \nKodingkita* \nDaftar perintah:\n*redon* untuk menyalakan lampu merah \n*greenon* untuk menyalakan lampu hijau\n*yellowon* untuk menyalakan lampu kuning\n*blueon* untuk menyalakan lampu biru\n*redoff* untuk mematikan lampu merah\n*greenoff* untuk mematikan lampu hijau\n*yellowoff* untuk mematikan lampu kuning\n*blueoff* untuk mematikan lampu biru\n*greenoff* untuk mematikan lampu merah\n*allon* untuk menyalakan semua lampu\n*alloff* untuk mematikan semua lampu', parse_mode= 'Markdown')
 
-bot = telepot.Bot('839487405:AAFDoBPSS8fjJrQs-ThiEXQMkbPl1aOptTw') # Ganti 'Bot Token' dengan kode token anda, misal bot = telepot.Bot('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9')
+bot = telepot.Bot('YOUR KEY') # Ganti 'Bot Token' dengan kode token anda, misal bot = telepot.Bot('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9')
 bot.message_loop(handle)
 print('===============================================')
 print('Selamat datang di Smarthome Telegram Kodingkita')
