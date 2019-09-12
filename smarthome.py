@@ -23,6 +23,13 @@ GPIO.setup(greenLight, GPIO.OUT)
 GPIO.setup(yellowLight, GPIO.OUT)
 GPIO.setup(blueLight, GPIO.OUT)
 
+def off(pin):
+        GPIO.output(pin,GPIO.LOW)
+        return
+def on(pin):
+        GPIO.output(pin,GPIO.HIGH)
+        return
+
 class ChannelStatus(Resource):
     def get(self):
 
@@ -95,10 +102,10 @@ def post():
 		return jsonify({'status':300, 'message':'Lampu tidak ditemukan'})
 
 	if isOn == 1:
-		GPIO.output(light, GPIO.HIGH)
+		on(light)
 		message = "%s dinyalakan" % (message)
 	else:
-		GPIO.output(light, GPIO.LOW)
+		off(light)
 		message =  "%s dimatikan" % (message)
 
 	return jsonify({'status':200, 'message': message})
