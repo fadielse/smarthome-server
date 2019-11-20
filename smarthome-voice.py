@@ -27,7 +27,7 @@ commandYellowLightOff = ["matikan lampu kuning", "lampu kuning off"]
 commandBlueLightOff = ["matikan lampu biru", "lampu biru off"]
 commandAllChannelOff = ["matikan semua lampu", "semua lampu off"]
 
-Setup GPIOs
+# Setup GPIOs
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
