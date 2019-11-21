@@ -110,10 +110,10 @@ def post():
 		on(blueLight)
 		message = 'Lampu biru sudah dinyalakan'
 	elif command in commandAllChannelOn:
-		on(redLight, greenLight, yellowLight, blueLight)
+		on((redLight, greenLight, yellowLight, blueLight))
 		message = 'Semua lampu sudah dinyalakan'
 	elif command in commandRedLightOff:
-		off(redLightStatus)
+		off(redLight)
 		message = 'Lampu merah sudah dimatikan'
 	elif command in commandGreenLightOff:
 		off(greenLight)
@@ -125,7 +125,7 @@ def post():
 		off(blueLight)
 		message = 'Lampu biru sudah dimatikan'
 	elif command in commandAllChannelOff:
-		off(redLight, greenLight, yellowLight, blueLight)
+		off((redLight, greenLight, yellowLight, blueLight))
 		message = 'Semua lampu sudah dimatikan'
 	else:
 		return jsonify({'status':300, 'message':'Perintah tidak dimengerti'})
