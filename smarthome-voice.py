@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask_restful import Resource, Api
 from json import dumps
 import json
-import RPi.GPIO as GPIO
+# import RPi.GPIO as GPIO
 
 app = Flask(__name__)
 api = Api(app)
@@ -27,7 +27,7 @@ commandYellowLightOff = ["matikan lampu kuning", "lampu kuning off"]
 commandBlueLightOff = ["matikan lampu biru", "lampu biru off"]
 commandAllChannelOff = ["matikan semua lampu", "semua lampu off"]
 
-# Setup GPIOs
+Setup GPIOs
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
@@ -98,7 +98,7 @@ def post():
 	message = ''
 
 	if command in commandRedLightOn:
-		on(redLightStatus)
+		on(redLight)
 		message = 'Lampu merah sudah dinyalakan'
 	elif command in commandGreenLightOn:
 		on(greenLight)
