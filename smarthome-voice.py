@@ -94,7 +94,7 @@ def get_data(data):
 def post():
 	json_data = get_data(request.data)
 	print(json_data)
-	command = json_data["command"]
+	command = json_data["command"].lower()
 	message = ''
 
 	if command in commandRedLightOn:
